@@ -13,7 +13,7 @@ class Usuario {
     }
 
     public __construc() {
-        
+
     }
 
     public setId(int $id) {
@@ -50,6 +50,8 @@ class Usuario {
 
     public getUser() {
         $user = new SplFixedArray(4); 
+        $user[0] = getId();
+        $user[1] = getName();
     }
 
 }
